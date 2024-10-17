@@ -38,7 +38,7 @@ export default async function HomePageView() {
               </p>
             </div>
             <div className="pt-4 flex gap-4">
-              <Link href="/#service-section">
+              <Link href="/services">
                 <CustomButton
                   title="LET'S GO!"
                   containerStyles="bg-[#D9D9D9] rounded-3xl hover:bg-[#292929]"
