@@ -5,7 +5,6 @@ import { IAsset } from "@/contentful/bauen.types";
 
 export default async function AboutUsView() {
   const bauenAboutUs = await getBauenAboutUs();
-  console.log(bauenAboutUs);
   return (
     <div className="pt-20">
       <div className="relative">
@@ -28,7 +27,7 @@ export default async function AboutUsView() {
 
       <div className="mt-4 px-4 md:px-32">
         <div className="flex flex-col gap-4 pt-4">
-          <div className="bg-[#D9D9D9] rounded-lg px-4 py-4 flex gap-4 drop-shadow-lg">
+          <div className="bg-[#D9D9D9] rounded-lg px-4 py-4 lg:flex gap-4 drop-shadow-lg">
             <div className="bg-slate-50 rounded-lg min-h-32 min-w-40 relative">
               <img
                 src={`https:${

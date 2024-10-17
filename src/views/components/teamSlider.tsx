@@ -38,7 +38,7 @@ export async function LeaderGrid() {
         bauenLeader?.items.map((data, index) => (
           <div
             key={index}
-            className="bg-[#D9D9D9] rounded-lg px-4 py-4 flex gap-4 drop-shadow-lg"
+            className="bg-[#D9D9D9] rounded-lg px-4 py-4 flex lg:flex-row items-center flex-col gap-4 drop-shadow-lg"
           >
             <div className="bg-[#292929] rounded-lg h-60 w-52 relative">
               <img
@@ -49,7 +49,7 @@ export async function LeaderGrid() {
                 className="object-cover h-60 w-52 rounded-2xl"
               />
             </div>
-            <div className="py-6">
+            <div className="lg:py-6">
               <h3 className="text-xl font-bold">{data.fields.leaderName}</h3>
               <h4 className="text-lg font-semibold">
                 {data.fields.leaderPosition}
